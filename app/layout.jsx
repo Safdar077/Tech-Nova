@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="google-site-verification"
-        content="google566672fc59c1767e.html" />
+        content="566672fc59c1767e" />
       </head>
       <body className={`font-sans antialiased`}>
         {children}
