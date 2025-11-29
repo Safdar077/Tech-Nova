@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "We build clean, fast and modern websites for businesses. Offering web development, UI design, and digital solutions tailored to your brand.",
   icons: {
-    icon: "/favicon.ico", // or /favicon.png
+    icon: "/favicon.ico"
   },
   keywords: [
     "web development",
@@ -32,61 +32,72 @@ export const metadata = {
       "Professional web development and UI design services to grow your online presence.",
     url: "https://technova-digital.vercel.app",
     siteName: "Tech Nova Digital",
-    type: "website",
+    type: "website"
   },
 
   twitter: {
     card: "summary_large_image",
     title: "Tech Nova Digital | Web Development & UI Design",
     description:
-      "Professional web development and UI design services.",
-
-  },
-};
+      "Professional web development and UI design services."
+  }
+}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification"
-        content="566672fc59c1767e" />
-        <script type="application/ld+json">
-    {`
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://technova-digital.vercel.app/"
-          }
-        ]
-      }
-    `}
-  </script>
+        {/* Google Site Verification */}
+        <meta 
+          name="google-site-verification" 
+          content="566672fc59c1767e" 
+        />
 
-  <script type="application/ld+json">
-    {`
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Tech Nova Digital",
-        "url": "https://technova-digital.vercel.app",
-        "image": "https://technova-digital.vercel.app/logo.png",
-        "telephone": "+918983939755",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Pune",
-          "addressRegion": "Maharashtra",
-          "addressCountry": "IN"
-        }
-      }
-    `}
-  </script>
+        {/* Breadcrumb Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://technova-digital.vercel.app/"
+                }
+              ]
+            }
+          `
+          }}
+        />
+
+        {/* Local Business Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Tech Nova Digital",
+              "url": "https://technova-digital.vercel.app",
+              "image": "https://technova-digital.vercel.app/logo.png",
+              "telephone": "+918983939755",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Pune",
+                "addressRegion": "Maharashtra",
+                "addressCountry": "IN"
+              }
+            }
+          `
+          }}
+        />
       </head>
-      <body className={`font-sans antialiased`}>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>
