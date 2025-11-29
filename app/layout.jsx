@@ -7,10 +7,39 @@ const _inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Tech Nova Digital | Web Development & UI Design Agency",
+  title: "Tech Nova Digital | Web Development & UI Design",
   description:
-    "Transform your digital presence with cutting-edge web development and stunning UI/UX design. Tech Nova Digital delivers innovative solutions for modern businesses.",
-}
+    "We build clean, fast and modern websites for businesses. Offering web development, UI design, and digital solutions tailored to your brand.",
+  keywords: [
+    "web development",
+    "UI design",
+    "website design",
+    "portfolio website",
+    "modern web design",
+    "frontend developer",
+    "next.js developer",
+    "India web developer"
+  ],
+  authors: [{ name: "Tech Nova Digital" }],
+  metadataBase: new URL("https://technova-digital.vercel.app"),
+
+  openGraph: {
+    title: "Tech Nova Digital | Web Development & UI Design",
+    description:
+      "Professional web development and UI design services to grow your online presence.",
+    url: "https://technova-digital.vercel.app",
+    siteName: "Tech Nova Digital",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Tech Nova Digital | Web Development & UI Design",
+    description:
+      "Professional web development and UI design services.",
+
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
