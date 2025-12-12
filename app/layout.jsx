@@ -6,7 +6,7 @@ import "./globals.css"
 const _inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Tech Nova Digital | Web Development & UI Design",
   description:
     "We build clean, fast and modern websites for businesses. Offering web development, UI design, and digital solutions tailored to your brand.",
