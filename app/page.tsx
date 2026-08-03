@@ -43,6 +43,9 @@ const SlideIn = ({
   const v = variants[direction] || variants.up
 
   return (
+    <head>
+      <script src="https://cdn-in.pagesense.io/js/zenlogixsolutions171/79114b22c1ea44e0adbc7256ceeab49d.js"></script>
+    </head>
     <motion.div initial={v.initial} animate={v.animate} transition={{ duration: 0.6, delay }}>
       {children}
     </motion.div>
